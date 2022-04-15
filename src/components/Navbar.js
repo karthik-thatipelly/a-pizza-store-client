@@ -1,11 +1,19 @@
+import React from 'react';
+import { Link } from "react-router-dom";
+
 function Navbar() {
     return (
     <nav className="navbar navbar-dark bg-dark">
-          <span className="navbar-brand mb-0 h1">PIZZA STORE</span>
-          <form className="form-inline">
-            <button className="btn btn-primary m-2" type="button">Register/login</button>
-            <button className="btn btn-warning m-2" type="button">Cart</button>
-         </form> 
+          <a href="/"><span className="navbar-brand mb-0 h1">PIZZA STORE</span></a>
+         
+         <div className=" navbar" id="navbarNav">
+                <a className="nav-link" href="/Authentication">
+                <button className="btn btn-primary">Register/ Login</button> 
+                </a>
+                <a className="nav-link" href="/checkout">
+                 <button className="btn btn-warning">Cart</button>
+                </a>
+         </div>
       </nav>
     );
 }

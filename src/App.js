@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Customize from './components/Customize';
 import Checkout from './components/Checkout';
+import Authentication from './components/Authentication/Authentication';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Customize />}/>
           <Route path="/checkout" element={<Checkout />}/>
+          <Route path="/Authentication" element={<Authentication />} />
         </Routes>
       </Router>
     </div>
